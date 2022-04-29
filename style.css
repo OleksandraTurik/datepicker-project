@@ -1,0 +1,70 @@
+.click {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+
+input {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.month {
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.modal-window {
+    width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 50px 0 rgb(0 0 0 / 20%);
+    margin: 50px auto;
+    overflow: hidden;
+    display: none;
+}
+
+.modal-window.active {
+    display: block;
+}
+
+.calendar {
+    padding: 20px;
+}
+
+.modal-window img {
+    width: 100%;
+    height: 250px;
+}
+
+.calendar a {
+    color: #444;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+table thead {
+    color: #CCC;
+}
+

@@ -1,9 +1,11 @@
+body.dark {
+    background: #4d4c5a;
+}
+
 .click {
     display: flex;
     justify-content: center;
-    margin-top: 200px;
 }
-
 
 input {
     border: 1px solid black;
@@ -27,7 +29,12 @@ input {
     display: none;
 }
 
-.modal-window.active {
+.dark .modal-window {
+    background: #141529;
+    color: #fff;
+}
+
+.modal-window.activeModal {
     display: block;
 }
 
@@ -38,6 +45,7 @@ input {
 .modal-window img {
     width: 100%;
     height: 250px;
+    object-fit: cover;
 }
 
 .calendar a {
@@ -54,17 +62,104 @@ input {
     font-size: 18px;
 }
 
+.dark .calendar a {
+    color: #fff;
+}
+
 table {
     width: 100%;
     text-align: center;
 }
 
+table td {
+    border: 1px solid #fff;
+    color: #000;
+    width: 30px;
+    height: 40px;
+}
+
+.dark table td {
+    border: 1px solid #141529;
+    color: #fff;
+}
+
+table td.active {
+    border: 1px solid #000;
+}
+
+.dark table td.active {
+    border: 1px solid #fff;
+}
+
 .title {
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.title button {
+    background-color: #fff;
+    border: none;
+    margin: 0 10px;
+}
+
+.dark .title button {
+    background: #141529;
+    color: #fff;
 }
 
 table thead {
     color: #CCC;
+}
+
+.calendar-footer {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+}
+
+.toggle span {
+    margin-right: 10px;
+    color: #000;
+}
+
+.dark .toggle span {
+    color: #fff ;
+}
+
+.dark-mode-switch {
+    position: relative;
+    width: 48px;
+    height: 25px;
+    border-radius: 14px;
+    background-color: #c3c2c8;
+    cursor: pointer;
+}
+
+.dark .dark-mode-switch {
+    background-color: #130072;
+}
+
+.dark-mode-switch-ident {
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: #fdfdfd;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: left 0.2s ease-in-out;
+}
+
+.dark .dark-mode-switch .dark-mode-switch-ident {
+    top: 2px;
+    left: calc(2px + 50%);
 }
 

@@ -13,11 +13,13 @@ body.dark {
     justify-content: center;
 }
 
-input {
+#input-field {
     border: 1px solid black;
-    padding: 10px;
+    padding: 10px 25px;
     border-radius: 5px;
     outline: none;
+    background-color: #fff;
+    cursor: pointer;
 }
 
 .month {
@@ -98,6 +100,7 @@ table td {
 
 table td.active {
     border: 1px solid #000;
+    background-color: #5995b1;
 }
 
 .dark table td.active {

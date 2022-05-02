@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
     <title>Datepicker</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   </head>
   <body class="light">
       <div class="click">
@@ -14,15 +15,18 @@
     <div class="modal-window" id="modal-window-id">
       <div class="seasons-photos">
         <img id="imageId" src="./img/spring.jpg" alt="" />
+        <div class="close" id="closeId">
+          <i class="fas fa-times-circle"></i>
+        </div>
       </div>
       <div class="calendar">
         <div class="title">
-            <button id="prev-month"><</button>
+            <button id="prev-month"><i class="fas fa-chevron-circle-left"></i></button>
             <span class="month" id="month_value">May</span>
-            <button id="next-month">></button>
-            <button id="prev-year"><</button>
+            <button id="next-month"><i class="fas fa-chevron-circle-right"></i></button>
+            <button id="prev-year"><i class="fas fa-chevron-circle-left"></i></button>
             <span class="year" id="years_value">2022</span>
-            <button id="next-year">></button>
+            <button id="next-year"><i class="fas fa-chevron-circle-right"></i></button>
         </div>
         <table>
           <thead>
